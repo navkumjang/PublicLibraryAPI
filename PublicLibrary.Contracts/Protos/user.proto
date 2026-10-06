@@ -1,0 +1,54 @@
+syntax = "proto3";
+package publiclibrary.user;
+option csharp_namespace = "PublicLibrary.Contracts.Protos";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+message UserLendingRate {
+  int32 borrowerId = 1;
+  string name = 2;
+  int32 borrowCount = 3;
+}
+
+message UserLendingRateRequest {
+  google.protobuf.Timestamp fromDate = 1;
+  google.protobuf.Timestamp toDate = 2;
+}
+
+message UserLendingRateResponse {
+  repeated UserLendingRate users = 1;
+}
+
+message UserReadingPaceRequest {
+  int32 borrowId = 1;
+}
+message UserReadingPace {
+  int32 borrowerId = 1;
+  string bookName = 2;
+  google.protobuf.Timestamp returnDate = 3;
+  double readingPace = 4;
+}
+
+message UserReadingPaceResponse {
+  repeated UserReadingPace pace = 1;
+}
+
+message UserBorrowingPatternsRequest {
+  int32 bookId = 1;
+}
+
+message UserBorrowingPattern {
+  int32 bookId = 1;
+  string bookName = 2;
+}
+
+message UserBorrowingPatternsResponse {
+  repeated UserBorrowingPattern patterns = 1;
+}
+
+service UserService {
+  rpc GetUserLendingRate(UserLendingRateRequest) returns (UserLendingRateResponse);
+  rpc GetUserReadingPace(UserReadingPaceRequest) returns (UserReadingPaceResponse);
+  rpc GetUserBorrowingPatterns(UserBorrowingPatternsRequest) returns (UserBorrowingPatternsResponse);
+}

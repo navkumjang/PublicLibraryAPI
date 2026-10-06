@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net10.0</TargetFramework>
+	<IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="NUnit" Version="3.13.3" />
+	<PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+	<PackageReference Include="Moq" Version="4.18.4" />
+	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\PublicLibrary.Service\PublicLibrary.Service.csproj" />
+	<ProjectReference Include="..\PublicLibrary.Infrastructure\PublicLibrary.Infrastructure.csproj" />
+	<ProjectReference Include="..\PublicLibrary.Domain\PublicLibrary.Domain.csproj" />
+	<ProjectReference Include="..\PublicLibrary.Contracts\PublicLibrary.Contracts.csproj" />
+	<ProjectReference Include="..\PublicLibraryAPI\PublicLibrary.API.csproj" />
+  </ItemGroup>
+
+</Project>

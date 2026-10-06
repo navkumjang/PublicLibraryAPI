@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="PublicLibrary.Contracts/PublicLibrary.Contracts.csproj" Id="a2e22bb2-85e3-46c0-a074-81949db6936b" />
+  <Project Path="PublicLibrary.Domain/PublicLibrary.Domain.csproj" Id="8c029a4d-0c0c-4160-bdda-3bdd09f27b8f" />
+  <Project Path="PublicLibrary.FunctionalTests/PublicLibrary.FunctionalTests.csproj" />
+  <Project Path="PublicLibrary.Infrastructure/PublicLibrary.Infrastructure.csproj" Id="376c9d05-3fdf-40b6-a014-ff8f7028f739" />
+  <Project Path="PublicLibrary.IntegrationTests/PublicLibrary.IntegrationTests.csproj" />
+  <Project Path="PublicLibrary.Service/PublicLibrary.Service.csproj" Id="0a594f33-8c05-4908-8e70-17371a61131c" />
+  <Project Path="PublicLibrary.SystemTests/PublicLibrary.SystemTests.csproj" />
+  <Project Path="PublicLibrary.UnitTests/PublicLibrary.UnitTests.csproj" />
+  <Project Path="PublicLibraryAPI/PublicLibrary.API.csproj" />
+</Solution>

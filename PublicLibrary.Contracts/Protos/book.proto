@@ -1,0 +1,19 @@
+syntax = "proto3";
+package publiclibrary.book;
+option csharp_namespace = "PublicLibrary.Contracts.Protos";
+
+import "google/protobuf/empty.proto";
+
+message InventoryInsight {
+  int32 bookId = 1;
+  string bookName = 2;
+  int32 totalBorrowed = 3;
+}
+
+message InventoryInsightsResponse {
+  repeated InventoryInsight insights = 1;
+}
+
+service BookService {
+  rpc GetInventoryInsights(google.protobuf.Empty) returns (InventoryInsightsResponse);
+}

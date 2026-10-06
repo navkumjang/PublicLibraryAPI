@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net10.0</TargetFramework>
+	<IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="NUnit" Version="3.13.3" />
+	<PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
+	<PackageReference Include="Grpc.Net.Client" Version="2.84.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\PublicLibrary.Service\PublicLibrary.Service.csproj" />
+	<ProjectReference Include="..\PublicLibraryAPI\PublicLibrary.API.csproj" />
+	<ProjectReference Include="..\PublicLibrary.Infrastructure\PublicLibrary.Infrastructure.csproj" />
+	<ProjectReference Include="..\PublicLibrary.Contracts\PublicLibrary.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
