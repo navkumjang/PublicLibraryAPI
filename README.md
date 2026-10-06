@@ -8,6 +8,15 @@ Short guide to get this repository running locally and to run the automated test
 - Reachable SQL Server instance and SQL Server LocalDB (recommended for tests) 
 - Git and a clone of this repository
 
+## AI Usage
+AI assistance was used during the development of this assignment for:
+* Generating boilerplate and scaffolding code across the solution.
+* Generating the initial database schema, database objects, and SQL scripts.
+* Generating and preparing sample/test data.
+* Assisting with test scaffolding and repetitive code generation.
+I (Naveen) reviewed, adapted, and validated as part of the final implementation.
+
+
 ## Project layout (high level)
 - PublicLibraryAPI/         — REST API project
 - PublicLibrary.Service/    — gRPC service project
